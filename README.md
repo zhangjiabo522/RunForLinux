@@ -46,7 +46,7 @@ cd RunForLinux
 #### Linux 系统（一键脚本）
 
 ```bash
-sh ./安装依赖并创建venv.sh
+bash ./安装依赖并创建venv.sh
 ```
 
 #### Windows 系统（手动安装依赖）
@@ -77,7 +77,7 @@ pip install keyboard pillow
 ```bash
 # Linux / macOS
 chmod +x run.sh
-nohup sh ./run.sh &
+nohup bash ./run.sh &
 
 # 或 Windows
 start NOCMD.exe "python main.py"
