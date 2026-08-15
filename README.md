@@ -114,6 +114,9 @@ RunForLinux/
 └── README.en.md               # 英文说明文档
 ```
 
+## 💻 项目运行效果
+![运行对话框](markdown-images/运行效果.png)
+
 ## 🛠️ 技术栈
 
 - **GUI 框架**：[Tkinter](https://docs.python.org/3/library/tkinter.html) — Python 标准库，跨平台轻量级 GUI
