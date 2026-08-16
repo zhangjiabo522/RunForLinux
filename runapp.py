@@ -5,8 +5,9 @@ from PIL import Image, ImageTk
 import sys
 import subprocess
 import os
-
-# __import__("ctypes").windll.user32.SetProcessDPIAware() # Fuck the DPI
+if sys.platform == "win32":
+    __import__("ctypes").windll.user32.SetProcessDPIAware() # Fuck the DPI
+    print("Fuck the DPI!")
 
 osdict = {
     "win32": "Windows",
@@ -58,7 +59,7 @@ def run_command():
 
 def about():
     from tkinter import messagebox
-    messagebox.showinfo("关于", "@Windows卸载程序\n同时感谢以♂下♂开♂发♂者：@豆包 @Trae CN")
+    messagebox.showinfo("关于", "@Windows卸载程序\n同时感谢以♂下♂开♂发♂者：@豆包 @TraeCode CN")
 
 def RunDialog():
     global root, entry
