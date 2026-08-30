@@ -70,7 +70,7 @@ def RunDialog():
 
     # 图片容错：找不到ico就不加载，避免崩溃
     try:
-        img = ImageTk.PhotoImage(Image.open("运行_00001.ico"))
+        img = ImageTk.PhotoImage(Image.open("运行_00003.ico"))
         ttk.Label(root, image=img).place(x=18, y=39)
     except Exception:
         pass
