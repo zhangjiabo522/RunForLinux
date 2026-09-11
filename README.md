@@ -10,20 +10,20 @@
 
 ---
 
-## ✨ 项目简介
+## 项目简介
 
 **Run For Linux** 是一个跨平台的「运行」对话框工具，复刻了 Windows 系统中 `Win + R` 快捷键打开的运行窗口。你可以用它快速打开程序、文件夹、文档或 Internet 资源，让 Linux 和 macOS 用户也能享受到同样便捷的操作体验。
 
-## 🎯 功能特性
+## 功能特性
 
-- ⌨️ **全局热键呼出** — `Win + R`（Windows）/ `Super + R`（Linux）快速唤起
-- 🖥️ **跨平台支持** — 兼容 Windows、Linux、macOS
-- 📂 **文件浏览** — 内置「浏览」按钮，快速选择要打开的文件
-- 🚀 **一键启动** — 输入命令或路径，回车即可执行
-- 🎨 **原生界面** — 基于 Tkinter，风格简洁，与系统无缝融合
-- 🔧 **轻巧无负担** — 纯 Python 实现，无需复杂依赖
+- **全局热键呼出** — `Win + R`（Windows）/ `Super + R`（Linux）快速唤起
+- **跨平台支持** — 兼容 Windows、Linux、macOS
+- **文件浏览** — 内置「浏览」按钮，快速选择要打开的文件
+- **一键启动** — 输入命令或路径，回车即可执行
+- **原生界面** — 基于 Tkinter，风格简洁，与系统无缝融合
+- **轻巧无负担** — 纯 Python 实现，无需复杂依赖
 
-## 🪟 Windows 运行指令兼容
+## Windows 运行指令兼容
 
 Linux 版会把常见 Win+R 指令转换为对应的 Linux 操作：
 
@@ -54,7 +54,7 @@ Linux 版会把常见 Win+R 指令转换为对应的 Linux 操作：
 还支持 `%USERPROFILE%`、`%TEMP%`、`%APPDATA%` 等常见 Windows
 环境变量，以及 URL、文件路径和 Linux 原生命令。
 
-## 📦 环境要求
+## 环境要求
 
 | 依赖 | 说明 |
 |------|------|
@@ -63,7 +63,7 @@ Linux 版会把常见 Win+R 指令转换为对应的 Linux 操作：
 | Pillow | 图像处理库，用于加载图标 |
 | keyboard | 全局热键监听库 |
 
-## 🚀 快速开始
+## 快速开始
 
 ### 1. 克隆项目
 
@@ -120,7 +120,7 @@ start NOCMD.exe "python main.py"
 python runapp.py
 ```
 
-## 📖 使用说明
+## 使用说明
 
 1. **呼出对话框**：按下 `Win + R`（Windows）或 `Super + R`（Linux/macOS）
 2. **输入内容**：在「打开」输入框中键入：
@@ -131,7 +131,7 @@ python runapp.py
 4. **浏览文件**：点击「浏览...」按钮手动选择文件
 5. **关闭**：点击「取消」或按 `Esc` 键
 
-## 📁 项目结构
+## 项目结构
 
 ```
 RunForLinux/
@@ -145,16 +145,16 @@ RunForLinux/
 └── README.en.md               # 英文说明文档
 ```
 
-## 💻 项目运行效果
+## 项目运行效果
 ![运行对话框](markdown-images/运行效果.png)
 
-## 🛠️ 技术栈
+## 技术栈
 
 - **GUI 框架**：[Tkinter](https://docs.python.org/3/library/tkinter.html) — Python 标准库，跨平台轻量级 GUI
 - **图像处理**：[Pillow](https://python-pillow.org/) — 图标加载与显示
 - **全局热键**：[keyboard](https://github.com/boppreh/keyboard) — 跨平台键盘事件监听
 - **系统调用**：`subprocess` / `os.system` — 跨平台命令执行
 
-## 📄 许可证
+## 许可证
 
 本项目基于 [MIT License](LICENSE) 开源，欢迎自由使用、修改和分发。
