@@ -23,6 +23,37 @@
 - 🎨 **原生界面** — 基于 Tkinter，风格简洁，与系统无缝融合
 - 🔧 **轻巧无负担** — 纯 Python 实现，无需复杂依赖
 
+## 🪟 Windows 运行指令兼容
+
+Linux 版会把常见 Win+R 指令转换为对应的 Linux 操作：
+
+| Windows 指令 | Linux 行为 |
+|--------------|------------|
+| `cmd` | 打开 Bash 终端 |
+| `cmd /k <命令>` | 转换常见 DOS 命令并在终端中执行 |
+| `powershell` | 已安装 `pwsh` 时打开 PowerShell |
+| `explorer` | 打开主目录 |
+| `explorer C:\Users\...` | 转换到对应的 Linux 目录 |
+| `control` | 打开 GNOME 系统设置 |
+| `control date/time` | 打开日期与时间设置 |
+| `taskmgr` | 打开系统监视器 |
+| `services.msc` | 查看 systemd 服务 |
+| `devmgmt.msc` | 查看 PCI、USB 和硬件信息 |
+| `diskmgmt.msc` | 打开磁盘工具 |
+| `eventvwr.msc` | 打开日志查看器 |
+| `cleanmgr` | 打开磁盘占用分析器 |
+| `notepad` | 打开文本编辑器 |
+| `calc` | 打开计算器 |
+| `regedit` | 打开 dconf 配置视图 |
+| `winver` | 显示系统版本信息 |
+| `msinfo32` / `dxdiag` | 显示系统信息 |
+| `shell:startup` | 打开登录自启动目录 |
+| `shell:downloads` | 打开下载目录 |
+| `shell:personal` | 打开用户主目录 |
+
+还支持 `%USERPROFILE%`、`%TEMP%`、`%APPDATA%` 等常见 Windows
+环境变量，以及 URL、文件路径和 Linux 原生命令。
+
 ## 📦 环境要求
 
 | 依赖 | 说明 |
@@ -127,4 +158,3 @@ RunForLinux/
 ## 📄 许可证
 
 本项目基于 [MIT License](LICENSE) 开源，欢迎自由使用、修改和分发。
-
